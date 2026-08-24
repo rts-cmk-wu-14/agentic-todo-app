@@ -26,7 +26,7 @@ body {
 	margin: 0;
 	background: var(--paper);
 	color: var(--ink);
-	font-family: "Segoe Print", "Bradley Hand", cursive;
+	font-family: var(--font-anido-hand), "Segoe Print", "Bradley Hand", cursive;
 }
 
 button,
@@ -70,7 +70,7 @@ label {
 
 .eyebrow {
 	color: var(--pink);
-	font: 700 11px Georgia, serif;
+	font: 700 11px var(--font-anido-hand), cursive;
 	letter-spacing: 1.7px;
 	text-transform: uppercase;
 }
@@ -88,7 +88,7 @@ label {
 .loading-screen span,
 .empty-state>span {
 	color: var(--pink);
-	font: 42px Georgia, serif;
+	font: 42px var(--font-anido-hand), cursive;
 	animation: twinkle 2s ease-in-out infinite;
 }
 
@@ -113,7 +113,7 @@ label {
 	display: flex;
 	align-items: center;
 	gap: 9px;
-	font: 700 25px Georgia, serif;
+	font: 700 25px var(--font-anido-hand), cursive;
 }
 
 .brand span,
@@ -126,7 +126,7 @@ label {
 	justify-content: space-between;
 	margin: 68px 8px 14px;
 	color: #bdb8e8;
-	font: 12px Georgia, serif;
+	font: 12px var(--font-anido-hand), cursive;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -202,7 +202,7 @@ label {
 	border-radius: 48%;
 	color: #ff9bc7;
 	padding: 12px 10px;
-	font: 19px Georgia, serif;
+	font: 19px var(--font-anido-hand), cursive;
 	transform: rotate(-8deg);
 }
 
@@ -230,7 +230,7 @@ label {
 .topbar h1 {
 	margin: 3px 0 0;
 	color: var(--deep);
-	font: 400 clamp(27px, 4vw, 42px) Georgia, serif;
+	font: 400 clamp(27px, 4vw, 42px) var(--font-anido-hand), cursive;
 }
 
 .profile-chip {
@@ -249,7 +249,7 @@ label {
 	border-radius: 50%;
 	background: var(--pink-soft);
 	color: var(--pink);
-	font: 700 16px Georgia, serif;
+	font: 700 16px var(--font-anido-hand), cursive;
 }
 
 .menu-button {
@@ -337,7 +337,7 @@ label {
 .list-intro h2 {
 	margin: 5px 0 0;
 	color: var(--deep);
-	font: 400 21px Georgia, serif;
+	font: 400 21px var(--font-anido-hand), cursive;
 }
 
 .progress-note {
@@ -398,7 +398,7 @@ label {
 	border-radius: 50%;
 	background: #fff;
 	color: #fff;
-	font: 14px Georgia, serif;
+	font: 14px var(--font-anido-hand), cursive;
 }
 
 .check-button.checked {
@@ -434,7 +434,7 @@ label {
 	flex-wrap: wrap;
 	gap: 8px;
 	margin-top: 5px;
-	font: 11px Georgia, serif;
+	font: 11px var(--font-anido-hand), cursive;
 }
 
 .priority {
@@ -483,7 +483,7 @@ label {
 	background: transparent;
 	color: var(--muted);
 	padding: 6px;
-	font: 16px Georgia, serif;
+	font: 16px var(--font-anido-hand), cursive;
 }
 
 .task-actions button:hover {
@@ -497,7 +497,7 @@ label {
 	background: #fff8df;
 	color: #805d00;
 	padding: 10px 14px;
-	font: 12px Georgia, serif;
+	font: 12px var(--font-anido-hand), cursive;
 }
 
 .empty-state,
@@ -512,7 +512,7 @@ label {
 .empty-state h2 {
 	margin: 10px 0 4px;
 	color: var(--deep);
-	font: 400 28px Georgia, serif;
+	font: 400 28px var(--font-anido-hand), cursive;
 }
 
 .empty-state p,
@@ -615,7 +615,7 @@ label {
 	border-radius: 44%;
 	background: #ffd9d0;
 	color: var(--deep);
-	font: 24px Georgia, serif;
+	font: 24px var(--font-anido-hand), cursive;
 }
 
 .collar {
@@ -635,13 +635,13 @@ label {
 
 .art-copy strong {
 	margin-left: 8px;
-	font: 28px Georgia, serif;
+	font: 28px var(--font-anido-hand), cursive;
 }
 
 .art-copy p {
 	margin: 18px 0 0;
 	color: #c9c5ee;
-	font: 16px/1.7 Georgia, serif;
+	font: 16px/1.7 var(--font-anido-hand), cursive;
 }
 
 .auth-panel {
@@ -660,7 +660,7 @@ label {
 .auth-panel h1 {
 	margin: 8px 0 4px;
 	color: var(--deep);
-	font: 400 37px/1.1 Georgia, serif;
+	font: 400 37px/1.1 var(--font-anido-hand), cursive;
 }
 
 .auth-subtitle {
@@ -682,7 +682,7 @@ label {
 .form-error {
 	margin: 0;
 	color: #c02f59;
-	font: 12px Georgia, serif;
+	font: 12px var(--font-anido-hand), cursive;
 }
 
 .auth-links {
@@ -696,7 +696,7 @@ label {
 	border: 0;
 	background: transparent;
 	color: var(--indigo);
-	font: 12px Georgia, serif;
+	font: 12px var(--font-anido-hand), cursive;
 }
 
 .phrase-card {
@@ -711,12 +711,12 @@ label {
 .phrase-card span,
 .phrase-card small {
 	color: #a75b7d;
-	font: 11px Georgia, serif;
+	font: 11px var(--font-anido-hand), cursive;
 }
 
 .phrase-card strong {
 	color: var(--indigo);
-	font: 17px Georgia, serif;
+	font: 17px var(--font-anido-hand), cursive;
 	letter-spacing: 1px;
 }
 
@@ -757,7 +757,7 @@ label {
 .modal h2 {
 	margin: 7px 0 24px;
 	color: var(--deep);
-	font: 400 27px Georgia, serif;
+	font: 400 27px var(--font-anido-hand), cursive;
 }
 
 .modal>label {
@@ -907,7 +907,7 @@ label {
 		display: block;
 		margin-bottom: 54px;
 		color: var(--indigo);
-		font: 700 25px Georgia, serif
+		font: 700 25px var(--font-anido-hand), cursive
 	}
 
 	.auth-panel {
