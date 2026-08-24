@@ -20,6 +20,27 @@ Use the browser's IndexedDB API as the local persistence layer for account, sess
 - Data is isolated to the browser/device and is not available across devices.
 - The implementation needs an IndexedDB initialization and migration strategy, plus graceful handling when storage is unavailable.
 
+## 2026-08-24: Normalize IndexedDB into users, lists, and items stores
+
+### Context
+
+The initial implementation stored the complete application state in one `app` object store row. This makes ownership boundaries and record-level updates harder to maintain.
+
+### Decision
+
+Use separate IndexedDB object stores for `users`, `lists`, and `items`, with a separate `session` store for the current session. Upgrade the existing database in place, migrate the legacy aggregate row into the normalized stores, and remove the legacy `app` store after migration.
+
+### Alternatives considered
+
+- Keep one aggregate row and continue replacing the whole application state.
+- Keep the aggregate row alongside normalized stores indefinitely.
+
+### Consequences
+
+- Users, lists, and items can be read and written as independent records while preserving the existing client-side fallback contract.
+- The version upgrade must migrate legacy data without dropping records.
+- The storage adapter remains responsible for reconstructing the UI's application snapshot and for clearing/rebuilding normalized stores during fallback restoration.
+
 ## 2026-08-24: Use hashed passwords for local accounts
 
 ### Context
